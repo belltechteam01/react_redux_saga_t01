@@ -1,0 +1,20 @@
+.filter-wrapper {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown {
+    width: 270px;
+}
+
+.toggle {
+    margin: 0;
+    height: auto;
+}
+
+.content {
+    width: 270px;
+    margin-top: 20px;
+    border-radius: 8px;
+}

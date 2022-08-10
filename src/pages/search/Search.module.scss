@@ -1,0 +1,22 @@
+.search-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.filters {
+    width: 270px;
+    height: fit-content;
+    border-top: 1px solid #f3f4f5;
+    border-bottom: 1px solid #f3f4f5;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 40px;
+}
+
+.villas {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
