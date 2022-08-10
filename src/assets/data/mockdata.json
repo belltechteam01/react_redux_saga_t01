@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "img": "/images/image-1.png",
+        "title": "Luxe villa in Alicante",
+        "address": "Murcia, Costa Cálida, Spanje",
+        "slappkamers": 3,
+        "badkamers": 2,
+        "price": 550
+    },
+    {
+        "id": 2,
+        "img": "/images/image-2.png",
+        "title": "Villa in Santiago de la Ribera, Costa Cálida, Spanje",
+        "address": "Santiago de la Ribera, Costa Cálida, Spanje",
+        "slappkamers": 3,
+        "badkamers": 2,
+        "price": 750
+    },
+    {
+        "id": 3,
+        "img": "/images/image-3.png",
+        "title": "Luxe villa in Alicante",
+        "address": "Santiago de la Ribera, Costa Cálida, Spanje",
+        "slappkamers": 3,
+        "badkamers": 2,
+        "price": 750
+    },
+    {
+        "id": 4,
+        "img": "/images/image-4.png",
+        "title": "Villa in Santiago de la Ribera, Costa Cálida, Spanje",
+        "address": "Santiago de la Ribera, Costa Cálida, Spanje",
+        "slappkamers": 3,
+        "badkamers": 2,
+        "price": 750
+    },
+    {
+        "id": 5,
+        "img": "/images/image-5.png",
+        "title": "Luxe villa in Alicante",
+        "address": "Santiago de la Ribera, Costa Cálida, Spanje",
+        "slappkamers": 3,
+        "badkamers": 2,
+        "price": 550
+    },
+    {
+        "id": 6,
+        "img": "/images/image-6.png",
+        "title": "Villa in Santiago de la Ribera, Costa Cálida, Spanje",
+        "address": "Santiago de la Ribera, Costa Cálida, Spanje",
+        "slappkamers": 3,
+        "badkamers": 2,
+        "price": 750
+    },
+    {
+        "id": 7,
+        "img": "/images/image-7.png",
+        "title": "Luxe villa in Alicante",
+        "address": "Santiago de la Ribera, Costa Cálida, Spanje",
+        "slappkamers": 3,
+        "badkamers": 2,
+        "price": 750
+    },
+    {
+        "id": 8,
+        "img": "/images/image-8.png",
+        "title": "Villa in Santiago de la Ribera, Costa Cálida, Spanje",
+        "address": "Santiago de la Ribera, Costa Cálida, Spanje",
+        "slappkamers": 3,
+        "badkamers": 2,
+        "price": 750
+    }
+]
