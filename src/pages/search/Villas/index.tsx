@@ -1,7 +1,14 @@
 import React from "react";
+import SearchForm from "./SearchForm";
+import VillaList from "./VillaList";
 
 const Villas = () => {
-    return <div>this is villa</div>;
+    return (
+        <>
+            <SearchForm />
+            <VillaList />
+        </>
+    );
 };
 
 export default Villas;

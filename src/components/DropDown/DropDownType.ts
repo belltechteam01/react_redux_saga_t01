@@ -1,3 +1,5 @@
+import { fType } from "../../utils/commonType";
+
 export const SORT: IFilter = {
     prefix: "Sort By",
     items: [
@@ -51,5 +53,3 @@ export interface IDropDownProps {
     onChange: fType;
     classes?: any;
 }
-
-export declare type fType = (...arg: any) => void;

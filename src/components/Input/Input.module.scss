@@ -1,0 +1,29 @@
+.inputWrapper {
+    width: 100%;
+    padding: 12px 0;
+    border: 1px solid #eaf6ff;
+    align-items: center;
+}
+
+.prefixIcon {
+    padding: 0 18px;
+    width: 16px;
+    height: 15.14px;
+}
+
+.searchbox {
+    width: 100%;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #5e6263;
+    border: 0;
+    outline-width: 0;
+
+    &::placeholder {
+        color: #aaa;
+    }
+}

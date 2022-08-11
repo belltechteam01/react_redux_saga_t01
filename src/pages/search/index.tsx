@@ -1,6 +1,7 @@
 import React from "react";
 import Filters from "./Filters";
 import styles from "./Search.module.scss";
+import Villas from "./Villas";
 
 const Search = () => {
     return (
@@ -9,7 +10,9 @@ const Search = () => {
                 <div className={styles["filters"]}>
                     <Filters />
                 </div>
-                <div className={styles["villas"]}>villa</div>
+                <div className={styles["villas"]}>
+                    <Villas />
+                </div>
             </div>
         </div>
     );
