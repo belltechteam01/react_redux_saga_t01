@@ -1,24 +1,39 @@
 import React, { useState } from "react";
 import DropDown from "../../../components/DropDown";
-import {
-    IFilterItem,
-    SORT,
-    TYPE,
-} from "../../../components/DropDown/DropDownType";
+import { IFilterItem } from "../../../components/DropDown/DropDownType";
+import { ISearchKeyProps, ISearchProps } from "../../../utils/commonType";
+import { FILTER_SORT, FILTER_TYPE, SORT, TYPE } from "../../../utils/constants";
 
 import styles from "./Filters.module.scss";
 
-const Filters = () => {
+const Filters = (props: ISearchProps) => {
+    const { onChange } = props;
     const [sortValue, setSortValue] = useState<IFilterItem>(SORT.items[0]);
-
     const [typeValue, setTypeValue] = useState<IFilterItem>(TYPE.items[0]);
 
     const handleSortChange = (updatevalue: IFilterItem) => {
         setSortValue(updatevalue);
+        const newData: ISearchKeyProps = {
+            key: FILTER_SORT,
+            value: updatevalue.value,
+        };
+
+        updateData(newData);
     };
 
     const handleTypeChange = (updateValue: IFilterItem) => {
         setTypeValue(updateValue);
+
+        const newData: ISearchKeyProps = {
+            key: FILTER_TYPE,
+            value: updateValue.value,
+        };
+
+        updateData(newData);
+    };
+
+    const updateData = (value: ISearchKeyProps) => {
+        onChange(value);
     };
     return (
         <div className={styles["filter-wrapper"]}>

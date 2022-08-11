@@ -1,3 +1,4 @@
+import { ISearch } from "./../../utils/commonType";
 import {
     loadingDataSuccess,
     loadingDataError,
@@ -9,7 +10,7 @@ import { call, delay, put, takeLatest } from "redux-saga/effects";
 import { IVillaType } from "./types";
 import { getData } from "../../utils/api";
 
-function* getVillaData(payload: any) {
+function* getVillaData(payload: ISearch) {
     try {
         const data: IVillaType[] = yield call(getData, payload);
         yield delay(1000);

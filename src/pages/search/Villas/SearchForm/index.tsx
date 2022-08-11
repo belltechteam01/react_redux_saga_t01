@@ -8,9 +8,13 @@ import { useSelector } from "react-redux";
 import { RootReducerType } from "../../../../store";
 import { useDispatch } from "react-redux";
 import { loadingDataStart } from "../../../../store/search_module";
+import { ISearchKeyProps, ISearchProps } from "../../../../utils/commonType";
+import { FILTER_KEYWORD } from "../../../../utils/constants";
 
-const SearchForm = () => {
+const SearchForm = (props: ISearchProps) => {
     const [searchText, setSearchText] = useState<string>("");
+
+    const { onChange } = props;
 
     const onChangeSearchText = (value: string) => {
         setSearchText(value);
@@ -18,15 +22,16 @@ const SearchForm = () => {
 
     const state = useSelector((state: RootReducerType) => state.search_villas);
 
-    const { loading, data } = state;
-
-    const dispatch = useDispatch();
+    const { loading } = state;
 
     const onButtonClick = () => {
-        dispatch(loadingDataStart());
-    };
+        const searchData: ISearchKeyProps = {
+            key: FILTER_KEYWORD,
+            value: searchText,
+        };
 
-    console.log(" data ============>", data);
+        onChange(searchData);
+    };
 
     return (
         <div className={styles["searchForm-wrapper"]}>
