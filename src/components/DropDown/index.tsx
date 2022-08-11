@@ -26,7 +26,7 @@ function DropDown(props: IDropDownProps) {
         return () => {
             window.removeEventListener("click", onWindowClick);
         };
-    }, []);
+    });
 
     const onToggle = () => {
         setIsOpen(!isOpen);
