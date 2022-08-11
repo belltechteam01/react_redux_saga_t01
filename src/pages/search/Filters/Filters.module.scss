@@ -1,6 +1,7 @@
 @import "../../../styles/breakpoint";
 
 .filter-wrapper {
+    width: 100%;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -23,10 +24,9 @@
 
 @include breakpoint("max-md") {
     .filter-wrapper {
-        gap: 10px;
         display: flex;
         width: 100%;
         flex-direction: row;
-        background-color: aqua;
+        justify-content: space-between;
     }
 }

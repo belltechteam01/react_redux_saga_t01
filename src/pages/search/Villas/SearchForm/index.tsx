@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Button from "../../../../components/Button";
 import Input from "../../../../components/Input";
 import styles from "./SearchForm.module.scss";
@@ -6,8 +6,6 @@ import styles from "./SearchForm.module.scss";
 import SearchIcon from "../../../../assets/icons/search.svg";
 import { useSelector } from "react-redux";
 import { RootReducerType } from "../../../../store";
-import { useDispatch } from "react-redux";
-import { loadingDataStart } from "../../../../store/search_module";
 import { ISearchKeyProps, ISearchProps } from "../../../../utils/commonType";
 import { FILTER_KEYWORD } from "../../../../utils/constants";
 
