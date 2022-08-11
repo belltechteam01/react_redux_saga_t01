@@ -1,0 +1,73 @@
+.itemWrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+    border-top: 1px solid #f3f4f5;
+
+    &:first-child {
+        padding-top: 0;
+        border-top: 0;
+    }
+}
+
+.itemImage {
+    width: 268px;
+    height: 160px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #191c1f;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 10px;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #5e6263;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 10px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #5e6263;
+}
+
+.price {
+    margin-top: 12px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #191c1f;
+}
