@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./LoadingItem.module.scss";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";

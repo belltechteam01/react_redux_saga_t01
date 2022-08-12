@@ -4,8 +4,8 @@ import { loadingDataStart } from "../../store/search_module";
 import { ISearch, ISearchKeyProps } from "../../utils/commonType";
 import { SORT_DATE_ADDED, TYPE_APPARTMENT } from "../../utils/constants";
 import Filters from "./Filters";
-import styles from "./Search.module.scss";
 import Villas from "./Villas";
+import styles from "./Search.module.scss";
 
 const Search = () => {
     const dispatch = useDispatch();

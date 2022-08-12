@@ -5,7 +5,7 @@ import {
     LOADING_DATA_START,
 } from "./actions";
 import { AxiosError } from "axios";
-import { call, delay, put, takeLatest } from "redux-saga/effects";
+import { all, call, delay, fork, put, takeLatest } from "redux-saga/effects";
 
 import { IVillaType } from "./types";
 import { getData } from "../../utils/api";
@@ -20,6 +20,10 @@ function* getVillaData(payload: ISearch) {
     }
 }
 
-export function* searchVillasSaga() {
+export function* middleGetVillaData() {
     yield takeLatest(LOADING_DATA_START, getVillaData);
+}
+
+export default function* searchVillasSaga() {
+    yield all([fork(middleGetVillaData)]);
 }

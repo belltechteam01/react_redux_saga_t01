@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./App.scss";
-import Search from "./pages/Search";
+import Search from "./pages/search";
 
 function App() {
     return (
