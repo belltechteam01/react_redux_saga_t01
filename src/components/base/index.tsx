@@ -1,15 +1,5 @@
-import * as React from 'react';
-import styles from './styles.module.scss';
+import Button from './Button';
 
-interface IComponentProps {
-    
-}
-
-export default function ComponentName(props: IComponentProps) {
-    return (
-        <div className={styles.root}>
-            
-        </div>
-    )
-}
-
+export {
+    Button,
+};
